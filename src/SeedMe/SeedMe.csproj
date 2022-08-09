@@ -89,6 +89,9 @@
             <SpecificVersion>False</SpecificVersion>
             <HintPath>bin\Release\ServerSync.dll</HintPath>
         </Reference>
+        <Reference Include="UnityEngine.InputLegacyModule">
+          <HintPath>D:\SteamLibrary\steamapps\common\Valheim\valheim_Data\Managed\UnityEngine.InputLegacyModule.dll</HintPath>
+        </Reference>
     </ItemGroup>
     <ItemGroup>
         <Compile Include="Properties\AssemblyInfo.cs" />
