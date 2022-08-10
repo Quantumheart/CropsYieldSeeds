@@ -3,6 +3,7 @@ using System.Reflection;
 using BepInEx;
 using BepInEx.Logging;
 using HarmonyLib;
+using JetBrains.Annotations;
 using UnityEngine;
 
 namespace SeedMe
@@ -43,18 +44,26 @@ namespace SeedMe
         static class PickableDropPatch
         {
             [HarmonyPrefix]
-            static void PostFix(Pickable prefab, int offset, int stack)
+            [UsedImplicitly]
+            // ReSharper disable once InconsistentNaming
+            static void PostFix(Pickable prefab, int offset, int stack, Pickable __instance)
             {
                 if (prefab == null)
                     return;
                 if (!CropSeedObjDictionary.ContainsKey(prefab.name)) return;
-                var seeds = ObjectDB.instance
-                                    .GetItemPrefab($"{prefab.name}Seeds");
-                if (seeds is not null)
+                CropSeedObjDictionary[prefab.name] ??= ObjectDB.instance
+                    .GetItemPrefab(
+                        $"{prefab.name}Seeds");
+
+                if (CropSeedObjDictionary[prefab.name] is not null)
                 {
-                    var position = Camera.main.ScreenToWorldPoint(Input.mousePosition);
-                    position.y += 20f;
-                    Instantiate(seeds, position, Quaternion.identity);
+                    var seedStack = Random.Range(0, 3);
+                    for (var i =0; i < seedStack; i++)
+                    {
+                        var seeds = CropSeedObjDictionary[prefab.name];
+                        var position = __instance.transform.position;
+                        Instantiate(seeds, position, Quaternion.identity);
+                    }
                 }
             }
         }
