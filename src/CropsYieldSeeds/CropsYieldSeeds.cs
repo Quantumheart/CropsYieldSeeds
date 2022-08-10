@@ -9,11 +9,11 @@ using UnityEngine;
 namespace SeedMe
 {
     [BepInPlugin(ModGuid, ModName, ModVersion)]
-    public class SeedMe : BaseUnityPlugin
+    public class CropsYieldSeeds : BaseUnityPlugin
     {
         // Mod Configuration
         private const string ModGuid = Author + "." + ModName;
-        private const string ModName = nameof(SeedMe);
+        private const string ModName = nameof(CropsYieldSeeds);
         private const string ModVersion = "1.0.0";
         private const string Author = "Quantumheart";
 

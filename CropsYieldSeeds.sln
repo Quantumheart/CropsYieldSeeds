@@ -2,9 +2,9 @@
 Microsoft Visual Studio Solution File, Format Version 12.00
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{F0DF2BFE-C62D-4CBA-93C6-A93203CF146E}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "SeedMe", "SeedMe", "{F7DAC79C-C2E5-4FE3-BB5E-5F5E50A68D59}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "CropsYieldSeeds", "CropsYieldSeeds", "{F7DAC79C-C2E5-4FE3-BB5E-5F5E50A68D59}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SeedMe", "src\SeedMe\SeedMe.csproj", "{FD7B3E86-40E0-409C-A011-319EB5AB0BC0}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CropsYieldSeeds", "src\CropsYieldSeeds\CropsYieldSeeds.csproj", "{FD7B3E86-40E0-409C-A011-319EB5AB0BC0}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
