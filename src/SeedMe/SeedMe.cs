@@ -41,12 +41,11 @@ namespace SeedMe
         }
 
         [HarmonyPatch(typeof(Pickable), nameof(Pickable.Drop))]
-        static class PickableDropPatch
+        static class PickablePrefixDropPatch
         {
             [HarmonyPrefix]
             [UsedImplicitly]
-            // ReSharper disable once InconsistentNaming
-            static void PostFix(Pickable prefab, int offset, int stack, Pickable __instance)
+            private static void SetCropSeed(Pickable prefab, int offset, int stack)
             {
                 if (prefab == null)
                     return;
@@ -54,16 +53,24 @@ namespace SeedMe
                 CropSeedObjDictionary[prefab.name] ??= ObjectDB.instance
                     .GetItemPrefab(
                         $"{prefab.name}Seeds");
+            }
+        }
 
-                if (CropSeedObjDictionary[prefab.name] is not null)
+        [HarmonyPatch(typeof(Pickable), nameof(Pickable.Drop))]
+        static class PickablePostfixDropPatch
+        {
+            [HarmonyPrefix]
+            [UsedImplicitly]
+            // ReSharper disable once InconsistentNaming
+            private static void SpawnCropSeeds(Pickable prefab, int offset, int stack, Pickable __instance)
+            {
+                if (CropSeedObjDictionary[prefab.name] is null) return;
+                var seedStack = Random.Range(0, 3);
+                for (var i = 0; i < seedStack; i++)
                 {
-                    var seedStack = Random.Range(0, 3);
-                    for (var i =0; i < seedStack; i++)
-                    {
-                        var seeds = CropSeedObjDictionary[prefab.name];
-                        var position = __instance.transform.position;
-                        Instantiate(seeds, position, Quaternion.identity);
-                    }
+                    var seeds = CropSeedObjDictionary[prefab.name];
+                    var position = __instance.transform.position;
+                    Instantiate(seeds, position, Quaternion.identity);
                 }
             }
         }
