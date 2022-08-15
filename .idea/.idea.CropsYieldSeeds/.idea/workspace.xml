@@ -4,19 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="cdd30fff-998e-42d0-8e1e-f4cb1cd8c0ad" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/.idea.CropsYieldSeeds/.idea/indexLayout.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/.idea.CropsYieldSeeds/.idea/projectSettingsUpdater.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/.idea.CropsYieldSeeds/.idea/riderPublish.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/.idea.CropsYieldSeeds/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/.idea.CropsYieldSeeds/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CropsYieldSeeds.sln" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/CropsYieldSeeds/CropsYieldSeeds.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/CropsYieldSeeds/CropsYieldSeeds.csproj" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/CropsYieldSeeds/Libraries/ServerSync.dll" afterDir="false" />
-    </list>
+    <list default="true" id="cdd30fff-998e-42d0-8e1e-f4cb1cd8c0ad" name="Changes" comment="refactor: rebuild for .net standard" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -89,8 +77,16 @@
       <workItem from="1660575331598" duration="43000" />
       <workItem from="1660576457293" duration="2361000" />
       <workItem from="1660584629463" duration="368000" />
-      <workItem from="1660585008542" duration="3350000" />
+      <workItem from="1660585008542" duration="4089000" />
     </task>
+    <task id="LOCAL-00001" summary="refactor: rebuild for .net standard">
+      <created>1660594787889</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1660594787889</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -111,5 +107,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
+    <MESSAGE value="refactor: rebuild for .net standard" />
+    <option name="LAST_COMMIT_MESSAGE" value="refactor: rebuild for .net standard" />
   </component>
 </project>
