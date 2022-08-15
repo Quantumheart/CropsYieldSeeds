@@ -18,7 +18,7 @@
         <PackageReadmeFile>README.md</PackageReadmeFile>
     </PropertyGroup>
     <ItemGroup>
-        <Content Include="../../README.md" Pack="true" PackagePath="/" CopyToPublishDirectory="Always"/>
+        <Content Include="../../README.md" Pack="true" PackagePath="/" CopyToPublishDirectory="Always" />
 
     </ItemGroup>
     
