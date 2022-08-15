@@ -6,7 +6,7 @@ using HarmonyLib;
 using JetBrains.Annotations;
 using UnityEngine;
 
-namespace SeedMe
+namespace CropsYieldSeeds
 {
     [BepInPlugin(ModGuid, ModName, ModVersion)]
     public class CropsYieldSeeds : BaseUnityPlugin
