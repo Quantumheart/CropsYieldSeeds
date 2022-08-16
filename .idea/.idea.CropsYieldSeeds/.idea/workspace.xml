@@ -83,7 +83,7 @@
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
 }</component>
-  <component name="RunManager" selected="Publish to folder.Publish CropsYieldSeeds to folder">
+  <component name="RunManager" selected="npm.release">
     <configuration name="Publish CropsYieldSeeds to folder" type="DotNetFolderPublish" factoryName="Publish to folder">
       <riderPublish configuration="Release" delete_existing_files="true" platform="Any CPU" runtime="Portable" target_folder="$USER_HOME$/Releases" target_framework="netstandard2.0" uuid_high="3443226341661755445" uuid_low="-7396198890307755840" />
       <method v="2" />
@@ -126,8 +126,8 @@
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="npm.release:preview" />
         <item itemvalue="npm.release" />
+        <item itemvalue="npm.release:preview" />
       </list>
     </recent_temporary>
   </component>
