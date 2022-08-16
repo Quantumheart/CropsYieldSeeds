@@ -1,5 +1,5 @@
 {
-  "version": "0.0.1",
+  "version": "0.0.2-preview.0",
   "devDependencies": {
     "@commitlint/cli": "^17.0.3",
     "@commitlint/config-conventional": "^17.0.3",
@@ -8,6 +8,7 @@
     "standard-version": "^9.5.0"
   },
   "scripts": {
+    "release:preview": "standard-version --skip.changelog=true --skip.tag=true --prerelease preview --commit-all",
     "release": "standard-version --commit-all"
   }
 }
