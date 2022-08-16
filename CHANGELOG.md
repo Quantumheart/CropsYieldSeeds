@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.0.2](https://github.com/Quantumheart/CropsYieldSeeds/compare/v0.0.1...v0.0.2) (2022-08-16)
+
+
+### Bug Fixes
+
+* resolve issue with other Pickables; handle nonexistent keys and update workspace.xml ([e62b07d](https://github.com/Quantumheart/CropsYieldSeeds/commit/e62b07dd5cc304e5b4dd841697bcbde10c8a8137))
+
 ### 0.0.1 (2022-08-15)
 
 
