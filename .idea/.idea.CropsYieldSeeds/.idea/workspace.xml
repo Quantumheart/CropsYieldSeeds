@@ -4,8 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="cdd30fff-998e-42d0-8e1e-f4cb1cd8c0ad" name="Changes" comment="refactor: remove AssemblyInfo.cs">
-      <change beforePath="$PROJECT_DIR$/Readme.md" beforeDir="false" />
+    <list default="true" id="cdd30fff-998e-42d0-8e1e-f4cb1cd8c0ad" name="Changes" comment="chore: remove Readme.md">
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.CropsYieldSeeds/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.CropsYieldSeeds/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/CropsYieldSeeds/CropsYieldSeeds.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/CropsYieldSeeds/CropsYieldSeeds.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -29,6 +30,7 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="GitToolBoxStore">
+    <option name="projectConfigVersion" value="5" />
     <option name="recentBranches">
       <RecentBranches>
         <option name="branchesForRepo">
@@ -54,6 +56,7 @@
     </option>
   </component>
   <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/package-lock.json" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/src/CropsYieldSeeds/CropsYieldSeeds.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="MarkdownSettingsMigration">
@@ -65,21 +68,21 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "/home/quantumheart/Releases",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "preferences.customizations",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/home/quantumheart/Releases&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.customizations&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RunManager" selected="Publish to folder.Publish CropsYieldSeeds to folder">
     <configuration name="Publish CropsYieldSeeds to folder" type="DotNetFolderPublish" factoryName="Publish to folder">
       <riderPublish configuration="Release" delete_existing_files="true" platform="Any CPU" runtime="Portable" target_folder="$USER_HOME$/Releases" target_framework="netstandard2.0" uuid_high="3443226341661755445" uuid_low="-7396198890307755840" />
@@ -95,10 +98,38 @@
       </option>
       <method v="2" />
     </configuration>
+    <configuration name="release" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="release" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
+    <configuration name="release:preview" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="release:preview" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
     <list>
       <item itemvalue="Attach to Unity Editor.Attach to Unity Editor" />
+      <item itemvalue="npm.release:preview" />
+      <item itemvalue="npm.release" />
       <item itemvalue="Publish to folder.Publish CropsYieldSeeds to folder" />
     </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="npm.release:preview" />
+        <item itemvalue="npm.release" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -112,7 +143,8 @@
       <workItem from="1660575331598" duration="43000" />
       <workItem from="1660576457293" duration="2361000" />
       <workItem from="1660584629463" duration="368000" />
-      <workItem from="1660585008542" duration="6230000" />
+      <workItem from="1660585008542" duration="7748000" />
+      <workItem from="1660614931793" duration="1175000" />
     </task>
     <task id="LOCAL-00001" summary="refactor: rebuild for .net standard">
       <created>1660594787889</created>
@@ -135,7 +167,14 @@
       <option name="project" value="LOCAL" />
       <updated>1660595296890</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="chore: remove Readme.md">
+      <created>1660597043380</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1660597043380</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -159,6 +198,7 @@
     <MESSAGE value="refactor: rebuild for .net standard" />
     <MESSAGE value="chore: update .idea workspace.xml" />
     <MESSAGE value="refactor: remove AssemblyInfo.cs" />
-    <option name="LAST_COMMIT_MESSAGE" value="refactor: remove AssemblyInfo.cs" />
+    <MESSAGE value="chore: remove Readme.md" />
+    <option name="LAST_COMMIT_MESSAGE" value="chore: remove Readme.md" />
   </component>
 </project>
