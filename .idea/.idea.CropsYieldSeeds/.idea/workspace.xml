@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="cdd30fff-998e-42d0-8e1e-f4cb1cd8c0ad" name="Changes" comment="chore: remove Readme.md">
+    <list default="true" id="cdd30fff-998e-42d0-8e1e-f4cb1cd8c0ad" name="Changes" comment="chore: update .idea workspace.xml">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.CropsYieldSeeds/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.CropsYieldSeeds/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/CropsYieldSeeds/CropsYieldSeeds.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/CropsYieldSeeds/CropsYieldSeeds.cs" afterDir="false" />
     </list>
@@ -28,6 +28,7 @@
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RESET_MODE" value="HARD" />
   </component>
   <component name="GitToolBoxStore">
     <option name="projectConfigVersion" value="5" />
@@ -83,7 +84,7 @@
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
 }</component>
-  <component name="RunManager" selected="npm.release">
+  <component name="RunManager" selected="Publish to folder.Publish CropsYieldSeeds to folder">
     <configuration name="Publish CropsYieldSeeds to folder" type="DotNetFolderPublish" factoryName="Publish to folder">
       <riderPublish configuration="Release" delete_existing_files="true" platform="Any CPU" runtime="Portable" target_folder="$USER_HOME$/Releases" target_framework="netstandard2.0" uuid_high="3443226341661755445" uuid_low="-7396198890307755840" />
       <method v="2" />
@@ -144,7 +145,8 @@
       <workItem from="1660576457293" duration="2361000" />
       <workItem from="1660584629463" duration="368000" />
       <workItem from="1660585008542" duration="7748000" />
-      <workItem from="1660614931793" duration="1175000" />
+      <workItem from="1660614931793" duration="1523000" />
+      <workItem from="1660742138716" duration="23000" />
     </task>
     <task id="LOCAL-00001" summary="refactor: rebuild for .net standard">
       <created>1660594787889</created>
@@ -174,7 +176,21 @@
       <option name="project" value="LOCAL" />
       <updated>1660597043380</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="fix: resolve issue with other Pickables; handle nonexistent keys and update workspace.xml">
+      <created>1660616200451</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1660616200451</updated>
+    </task>
+    <task id="LOCAL-00006" summary="chore: update .idea workspace.xml">
+      <created>1660616327902</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1660616327902</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -196,9 +212,10 @@
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
     <MESSAGE value="refactor: rebuild for .net standard" />
-    <MESSAGE value="chore: update .idea workspace.xml" />
     <MESSAGE value="refactor: remove AssemblyInfo.cs" />
     <MESSAGE value="chore: remove Readme.md" />
-    <option name="LAST_COMMIT_MESSAGE" value="chore: remove Readme.md" />
+    <MESSAGE value="fix: resolve issue with other Pickables; handle nonexistent keys and update workspace.xml" />
+    <MESSAGE value="chore: update .idea workspace.xml" />
+    <option name="LAST_COMMIT_MESSAGE" value="chore: update .idea workspace.xml" />
   </component>
 </project>

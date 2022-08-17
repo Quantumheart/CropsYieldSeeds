@@ -64,7 +64,7 @@ namespace CropsYieldSeeds
             // ReSharper disable once InconsistentNaming
             private static void SpawnCropSeeds(Pickable prefab, int offset, int stack, Pickable __instance)
             {
-                if (CropSeedObjDictionary.ContainsKey(prefab.name)) return;
+                if (!CropSeedObjDictionary.ContainsKey(prefab.name)) return;
                 var seedStack = Random.Range(0, 3);
                 for (var i = 0; i < seedStack; i++)
                 {
