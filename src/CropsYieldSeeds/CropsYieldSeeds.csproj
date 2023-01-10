@@ -24,7 +24,7 @@
     
     <ItemGroup>
         <Reference Include="0Harmony">
-          <HintPath>..\..\..\..\.config\r2modmanPlus-local\Valheim\profiles\Default\BepInEx\core\0Harmony.dll</HintPath>
+          <HintPath>$(UserName)/.config/r2modmanPlus-local/Valheim/profiles/Default/BepInEx/core/0Harmony.dll</HintPath>
         </Reference>
         <Reference Include="assembly_guiutils">
             <HintPath>$(GamePath)/valheim_Data/Managed/publicized_assemblies/assembly_guiutils_publicized.dll</HintPath>
@@ -36,7 +36,7 @@
             <HintPath>$(GamePath)/valheim_Data/Managed/publicized_assemblies/assembly_valheim_publicized.dll</HintPath>
         </Reference>
         <Reference Include="BepInEx">
-          <HintPath>..\..\..\..\.config\r2modmanPlus-local\Valheim\profiles\Default\BepInEx\core\BepInEx.dll</HintPath>
+          <HintPath>$(UserName)/.config/r2modmanPlus-local/Valheim/profiles/Default/BepInEx/core/BepInEx.dll</HintPath>
         </Reference>
         <Reference Include="UnityEngine">
             <HintPath>$(GamePath)/valheim_Data/Managed/UnityEngine.dll</HintPath>
@@ -60,10 +60,15 @@
       <PackageReference Include="JetBrains.Annotations" Version="2022.1.0" />
     </ItemGroup>
 
+    <PropertyGroup>
+        <!--  Update for your username       -->
+        <UserName>/home/quantumheart</UserName>
+    </PropertyGroup>
+    
     <Choose>
         <When Condition="($(OS) == 'Unix' OR $(OS) == 'OSX') AND $(GamePath) == ''">
             <PropertyGroup>
-                <GamePath Condition="!Exists('$(GamePath)')">$(HOME)/.steam/steam/steamapps/common/Valheim</GamePath>
+                <GamePath Condition="!Exists('$(GamePath)')">/mnt/Games/SteamLibrary/steamapps/common/Valheim</GamePath>
                 <GamePath Condition="!Exists('$(GamePath)')">$(HOME)/Library/Application Support/Steam/steamapps/common/Valheim/Contents/MacOS</GamePath>
             </PropertyGroup>
 
@@ -73,7 +78,7 @@
                 <GamePath Condition="!Exists('$(GamePath)')">$([MSBuild]::GetRegistryValueFromView('HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\Steam App 892970', 'InstallLocation', null, RegistryView.Registry64, RegistryView.Registry32))</GamePath>
                 <_SteamLibraryPath>$([MSBuild]::GetRegistryValueFromView('HKEY_CURRENT_USER\SOFTWARE\Valve\Steam', 'SteamPath', null, RegistryView.Registry32))</_SteamLibraryPath>
                 <GamePath Condition="!Exists('$(GamePath)') AND '$(_SteamLibraryPath)' != ''">$(_SteamLibraryPath)\steamapps\common\Valheim</GamePath>
-                <GamePath Condition="!Exists('$(GamePath)')">\home\quantumheart\.local\share\Steam\steamapps\common\Valheim</GamePath>
+                <GamePath Condition="!Exists('$(GamePath)')">\mtn\Games\SteamLibrary\steamapps\common\Valheim</GamePath>
             </PropertyGroup>
         </When>
     </Choose>
